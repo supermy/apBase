@@ -6,7 +6,7 @@ MAINTAINER JamesMo <15510325588@163.com>
 ENV LANG       zh_CN.UTF-8
 ENV LANGUAGE   zh_CN:zh
 
-#更新Alpine的软件源为国内（清华大学）的站点，因为从默认官源拉取实在太慢了。。。
+#更新Alpine的软件源为国内（阿里云）的站点，因为从默认官源拉取实在太慢了。。。
 RUN echo "https://mirrors.aliyun.com/alpine/v3.10/main/" > /etc/apk/repositories && \
     echo "https://mirrors.aliyun.com/alpine/v3.10/community/" >> /etc/apk/repositories
 
