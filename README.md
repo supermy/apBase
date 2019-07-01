@@ -3,9 +3,12 @@
 
 ##介绍
 ---------------------
+###版本维护
+- 升级到3.10 2019-07-01
+
 ###构建指令
 - docker build -t supermy/alpine base 
-
+- docker build -t supermy/alpine:build base/build
 
 ###构造基础镜像包
 - 一是准备需要的中文环境；
@@ -21,7 +24,7 @@
 ###命令
 ```
 > docker build -t supermy/alpine base
-> docker run --rm -ti  supermy/alpine:latest
+> docker run -it --rm supermy/alpine date  -R
 > docker build -t supermy/alpine:build base/build
 > docker run --rm -ti  supermy/alpine:build
 ```
