@@ -51,5 +51,7 @@
 >docker rm `docker ps -a | grep Exited | awk '{print $1}'`  
 #清除无用镜像包
 >docker rmi  `docker images | grep none | awk '{print $3}'`
+#清理当前未运行的所有Docker容器：
+>docker system prune
 
 ```
